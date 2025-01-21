@@ -5,25 +5,38 @@ export default defineConfig({
   base: "/vite-blog/",
   title: "vite-blog",
   description: "A VitePress Site",
+  lastUpdated: true,
+  srcDir: "src",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    logo: "/images/cat.png",
     nav: [
       { text: "Home", link: "/" },
       { text: "Examples", link: "/markdown-examples" },
     ],
-
+    search: {
+      provider: "local",
+    },
     sidebar: [
       {
-        text: "Examples",
+        text: "note",
         items: [
-          { text: "Markdown Examples", link: "/markdown-examples" },
-          { text: "Runtime API Examples", link: "/api-examples" },
+          { text: "gulp", link: "/gulp" },
+          { text: "vitepress", link: "/vitepress" },
+          { text: "demo", link: "/demo" },
         ],
       },
     ],
 
     socialLinks: [
-      { icon: "github", link: "https://github.com/vuejs/vitepress" },
+      { icon: "github", link: "https://github.com/Augenstein10/vite-blog" },
     ],
+    footer: {
+      message: "Released under the MIT License.",
+      copyright: "Copyright © 2025-present Evan You",
+    },
+  },
+  markdown: {
+    lineNumbers: true,
   },
 });
