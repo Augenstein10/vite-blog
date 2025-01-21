@@ -22,8 +22,7 @@ export default defineConfig({
         text: "note",
         items: [
           { text: "gulp", link: "/gulp" },
-          { text: "vitepress", link: "/vitepress" },
-          { text: "demo", link: "/demo" },
+          { text: "vitepress", link: "/VitePress" },
         ],
       },
     ],
