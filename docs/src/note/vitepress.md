@@ -1,5 +1,6 @@
 ---
 lastUpdated: true
+title: VitePress
 ---
 
 VitePress 是一个[静态站点生成器](https://en.wikipedia.org/wiki/Static_site_generator) (SSG)，专为构建快速、以内容为中心的站点而设计。简而言之，VitePress 获取用 Markdown 编写的内容，对其应用主题，并生成可以轻松部署到任何地方的静态 HTML 页面。
@@ -7,6 +8,7 @@ VitePress 是一个[静态站点生成器](https://en.wikipedia.org/wiki/Static_
 # 安装
 
 - node 版本需要>18
+- 我这里使用的是 pnpm，如需使用其他包管理器，请参考[VitePress 官方文档](https://vitepress.vuejs.org/guide/getting-started)
 
 ### 1. 前置准备
 
@@ -68,10 +70,9 @@ pnpm run docs:dev
 ```yml
 # 构建 VitePress 站点并将其部署到 GitHub Pages 的示例工作流程
 
-#
+# 部署工作
 
 name: Deploy VitePress site to Pages
-
 
 on:
 
@@ -215,9 +216,13 @@ import { defineConfig } from "vitepress";
 
 export default defineConfig({
   base: "/vite-blog/", //添加这行，即 /repository/
-
   title: "vite-blog",
-
   //...........
 });
 ```
+
+🎉 到这里应该就成功搭建部署你的博客了
+
+# 参考
+
+- [VitePress 官方文档](https://vitepress.vuejs.org/guide/getting-started)

@@ -1,5 +1,6 @@
 ---
 lastUpdated: true
+title: gulp
 ---
 
 Gulp 是一个基于 Node.js 的前端构建工具，主要用于任务自动化,它通过使用插件执行文件操作（如编译、压缩、合并等），帮助开发者优化和构建项目,其核心特点是基于流（Stream）的方式处理文件，使得操作高效且可组合。
@@ -84,7 +85,7 @@ gulp
 [10:26:54] Finished 'default' after 1.06 ms
 ```
 
-    Gulp 允许你使用现有 JavaScript 知识来书写 gulpfile 文件，或者利用你所掌握的 gulpfile 经验来书写普通的 JavaScript 代码。虽然gulp 提供了一些实用工具来简化文件系统和命令行的操作，但是你所编写的其他代码都是纯 JavaScript 代码。
+Gulp 允许你使用现有 JavaScript 知识来书写 gulpfile 文件，或者利用你所掌握的 gulpfile 经验来书写普通的 JavaScript 代码。虽然 gulp 提供了一些实用工具来简化文件系统和命令行的操作，但是你所编写的其他代码都是纯 JavaScript 代码。
 
 ## 这是一个基本的 gulp 任务
 
@@ -109,14 +110,14 @@ exports.build = build;
 exports.default = series(clean, build);
 ```
 
-    在以前的 gulp 版本中，task() 方法用来将函数注册为任务（task）。虽然这个 API 依旧是可以使用的，但是 导出（export）将会是主要的注册机制，除非遇到 export 不起作用的情况。
+在以前的 gulp 版本中，task() 方法用来将函数注册为任务（task）。虽然这个 API 依旧是可以使的，但是 导出（export）将会是主要的注册机制，除非遇到 export 不起作用的情况。
 
 ## 组合任务
 
-    gulp提供了两个组合方法，分别是series()和parallel()，这两个方法都是用来接收任意数量的任务(task)，并且可以互相嵌套。
+gulp 提供了两个组合方法，分别是 series()和 parallel()，这两个方法都是用来接收任意数量的任务(task)，并且可以互相嵌套。
 
-1. 使用 series 方法(对于希望让任务==按顺序执行==的时候使用)
-2. 使用 parallel 方法(对于希望让任务以==最大并发来执行==的时候使用)
+1. 使用 series 方法(对于希望让任务按顺序执行的时候使用)
+2. 使用 parallel 方法(对于希望让任务以最大并发来执行的时候使用)
 
 ```javascript
 const { series, parallel } = require("gulp");
@@ -171,7 +172,7 @@ exports.build = series(clean, cssTranspile); // series方法
 
 ## 处理文件
 
-**gulp 主要是通过 src()、pipe（）和 dest()来处理文件的，主要分为三个步骤，获取文件，处理文件，输出文件**
+**gulp 主要是通过 src()、pipe()和 dest()来处理文件的，主要分为三个步骤，获取文件，处理文件，输出文件**
 
 ### **gulp.src(globs, [options])：文件输入。**
 
@@ -188,15 +189,14 @@ gulp.src(["src/**/*.js", "!src/ignore.js"]); // 排除 ignore.js
 
 2.  options：可选参数，用于设置读取文件的行为。
 
-        	read：指定是否读取文件内容(默认为true)
-
-        	base：设置文件的基准路径，用于确定输出文件结构
+    - read：指定是否读取文件内容(默认为 true)
+    - base：设置文件的基准路径，用于确定输出文件结构
 
 ```javascript
 gulp.src("src/**/*.js", { base: "src" }); // 保留 src 目录结构
 ```
 
-### ** [pipe](https://gulpjs.com/plugins/)(destination)：文件处理，==可以使用链式调用== **
+### [pipe](https://gulpjs.com/plugins/)(destination)：文件处理，可以使用链式调用
 
 pipe() 是 Gulp 的核心方法，用于将文件流传递到下一个处理步骤。它实现了文件的链式处理。
 
