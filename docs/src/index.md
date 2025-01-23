@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "vite-blog"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: "LK-Blog"
+  text: "A Daily Note Site"
+  tagline: Web Developer's Daily Note
   actions:
     - theme: brand
       text: Get Start
@@ -20,8 +20,8 @@ features:
     icon: 🐱
   - title: Feature B
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-    icon: 🍓
+    icon: 🎉
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-    icon: 🍎
+    icon: 🐶
 ---

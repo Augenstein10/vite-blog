@@ -39,6 +39,14 @@ export default defineConfig({
               text: "Gulp.js - 自动化构建工具",
               link: "/note/gulp",
             },
+            {
+              text: "VitePress集成tailwindcss",
+              link: "/note/VitePress集成tailwindcss",
+            },
+            {
+              text: "IntersectionObserver",
+              link: "/note/IntersectionObserver",
+            },
           ],
         },
       ],
@@ -61,7 +69,8 @@ export default defineConfig({
     lightModeSwitchTitle: "切换到浅色模式",
     darkModeSwitchTitle: "切换到深色模式",
     sidebarMenuLabel: "目录",
-    siteTitle: "Lk Blog",
+    siteTitle: "LK Blog",
+    returnToTopLabel: "返回顶部",
     // footer: {
     //   message: "Released under the MIT License.",
     //   copyright: "Copyright © 2025-present Evan You",
