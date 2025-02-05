@@ -15,13 +15,13 @@ hero:
       link: /live/live1
   image: /images/cat.png
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: TypeScript
+    details: TypeScript 是 JavaScript 的超集，支持静态类型检查，可以提高代码的可读性和可维护性。
     icon: 🐱
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Vue
+    details: Vue 是一个用于构建用户界面的渐进式框架，可以提高开发效率和代码的可维护性。
     icon: 🎉
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-    icon: 🐶
+  - title: Nest.js
+    details: Nest.js 是一个用于构建高效、可扩展的 Node.js 服务端应用的框架，可以提高开发效率和代码的可维护性。
+    icon: ⚽
 ---
