@@ -47,6 +47,10 @@ export default defineConfig({
               text: "IntersectionObserver",
               link: "/note/IntersectionObserver",
             },
+            {
+              text: "Nuxt3代码规范搭建",
+              link: "/note/Nuxt3代码规范",
+            },
           ],
         },
       ],
